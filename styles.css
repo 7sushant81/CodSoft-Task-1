@@ -1,0 +1,395 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #101010;
+    color: #f2f2f2;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+header {
+    background-image: linear-gradient(to right, white,black,black);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    font-family: myFont;
+    font-style: bold;
+    text-shadow: 7px 7px 25px black;
+    font-size: 2rem;
+    font-weight: 700;
+    color: black;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-weight: 500;
+    text-shadow: 7px 7px 25px black;
+}
+
+nav ul li a:hover {
+    color: red;
+    font-family: cursive;
+    font-size: 25px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 120vh;
+}
+
+
+.container { 
+    background-position: center;
+    background-size: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+.hero-text {
+    opacity: 100%;
+    width: 80%;
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-10%);
+    transform: translateX(10%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+}
+
+.hero-text h1 {
+    font-family: myFont;
+    font-size: 50px;
+    margin-bottom: 1px;
+    color: white;
+    text-shadow: 7px 7px 15px black;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin: 20px 0;
+    color: white;
+    padding: none;
+    margin-top: 1px;
+    font-family:cursive;
+    font-weight: bold;
+    text-shadow: 7px 7px 25px black;
+}
+
+.btn {
+    padding: 1px 5px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.primary-btn {
+    background-color: #ff1e00;
+    text-shadow: 7px 7px 25px black;
+    color: #fff;
+    font-family: fantasy;
+    font-size: 30px;
+}
+
+.secondary-btn {
+    background-color: #222;
+    color: #ff1e00;
+    border: 1px solid #ff1e00;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    background-color: #fff;
+    color: #ff1e00;
+}
+
+/* About Section */
+.about-section {
+    padding: 100px 20px;
+    background-color: #111;
+        
+}
+
+.about-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.about-section h3 {
+    font-size: 1.2rem;
+    max-width: 800px;
+    text-align: center;
+    margin-left: 30%;
+}
+
+/* Heroes Section */
+.heroes-section {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.heroes-section h2 {
+    
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.hero-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-card h3 {
+    margin-top: 10px;
+}
+
+.hero-card:hover {
+    transform: scale(1.05);
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(avengers.ttf);
+}
+
+.avengers {
+    color: yellow;
+    font-family: myFont;
+    font-size: 70px;
+    background: transparent;
+    border: none;
+    margin-bottom:1px;
+    text-shadow: 7px 7px 15px black;
+}
+
+
+/* Features Section */
+.features-section {
+    padding: 100px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.feature-card h3 {
+    font-size: 1.8rem;
+    color: #ff1e00;
+}
+
+.feature-card p {
+    margin-top: 10px;
+}
+
+.feature-card:hover {
+    background-color: #333;
+}
+
+/* Team Section */
+.team-section {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.team-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team-card h3 {
+    margin-top: 15px;
+    color: #ff1e00;
+}
+
+.team-card p {
+    margin-top: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.Marvel {
+    color: White;
+    background-color: red;
+    border: none;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-family: fantasy;
+    font-size: 20px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+    padding: 100px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.testimonial-card p {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-card h4 {
+    color: #ff1e00;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 100px 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    margin-bottom: 30px;
+}
+
+.faq-item h3 {
+    font-size: 1.8rem;
+    color: #ff1e00;
+}
+
+.faq-item p {
+    margin-top: 10px;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 100px 20px;
+    background-color: #111;
+    text-align: center;
+}
+
+.cta-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+/* Footer Section */
+.footer-section {
+    padding: 50px 20px;
+    background-color: #000;
+    text-align: center;
+}
+
+.footer-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
